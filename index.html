@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../estilos/estilos.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="encabezado">
+      <img class="encabezado__logo" src="imagenes/logo.jpg" alt="logo rs" />
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Rico & Sano Market🌿</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="quienessomos.html">QUIENES SOMOS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="productos.html">PRODUCTOS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="delivery.html">ZONA DE DELIVERY</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contacto.html">REDES SOCIALES</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="contacto.html"
+                id="navbarDropdownMenuLink"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                CONTACTO
+              </a>
+
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="https://api.whatsapp.com/send?phone=5491127613620&text=%C2%A1Hola%21+Quisiera+hacerles+una+consulta..."
+                    target="_blank"
+                    >WHATSAPP</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="https://instagram.com/ricoysano.market?igshid=10ux4unrprlyv"
+                    target="_blank"
+                    >INSTAGRAM</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="https://m.facebook.com/ricoysanomarket-100160511761059/?tsid=0.819433285409622&source=result"
+                    target="_blank"
+                    >FACEBOOK</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Button trigger modal -->
+    <div class="modalRegistrationContainer">
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        REGISTRARSE
+      </button>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel"></h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="formContainer">
+              <div class="formHeader">
+                <h2>Registro de usuario</h2>
+              </div>
+              <form id="form" class="form">
+                <div class="form-control">
+                  <label for="username">Nombre de usuario</label>
+                  <input type="text" placeholder="ejemplo: JoelM" id="username" />
+                  <i class="fas fa-check-circle"></i>
+                  <i class="fas fa-exclamation-circle"></i>
+                  <small>Error message</small>
+                </div>
+                <div class="form-control">
+                  <label for="username">Email</label>
+                  <input type="email" placeholder="ejemplo: joel.j.mendez.m@gmail.com" id="email" />
+                  <i class="fas fa-check-circle"></i>
+                  <i class="fas fa-exclamation-circle"></i>
+                  <small>Error message</small>
+                </div>
+                <div class="form-control">
+                  <label for="username">Contraseña</label>
+                  <input type="password" placeholder="ejemplo: casa1234" id="password" />
+                  <i class="fas fa-check-circle"></i>
+                  <i class="fas fa-exclamation-circle"></i>
+                  <small>Error message</small>
+                </div>
+                <div class="form-control">
+                  <label for="username">Verificación de contraseña</label>
+                  <input type="password" placeholder="Repita la contraseña" id="password2" />
+                  <i class="fas fa-check-circle"></i>
+                  <i class="fas fa-exclamation-circle"></i>
+                  <small>Error message</small>
+                </div>
+                <button onclick="checkInputs(event); enterPage(event);">Registrar</button>
+              </form>
+              <div id="successMessage" class="registroExitoso"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="secciones__productos">
+      <div class="secciones__productos--alineacion">
+        <h1 class="secciones__productos--titulo">PRODUCTOS</h1>
+      </div>
+    <h1>Rico y Sano Market - porque comer sano nunca fue tan rico!</h1>
+    <br /><br />
+    <div id="usuario"></div>
+    <br />
+    <h1>Acontinuación le presentamos nuestros productos disponibles:</h1>
+    <br />
+    <h2>Lista de productos a elegir:</h2>
+    <div id="contenedorProductos"></div>
+    <div id="contenedorProductosSeleccionados"></div>
+
+    <script src="./class/carritoCliente.js"></script>
+    <script src="./class/listaCarrito.js"></script>
+    <script src="./functions/paymentModal.js"></script>
+    <script src="./functions/visualizacion.js"></script>
+    <script src="../Register/logicRegistration.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>

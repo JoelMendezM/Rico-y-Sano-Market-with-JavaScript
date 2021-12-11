@@ -1,0 +1,32 @@
+[
+  {
+    "idProducto": "burgers",
+    "nombreProducto": "Veggie burgers",
+    "precioProducto": 500,
+    "imagenProducto": "./imagenes/veggieburgers.jpg"
+  },
+  {
+    "idProducto": "mila",
+    "nombreProducto": "Milanesas de pollo",
+    "precioProducto": 400,
+    "imagenProducto": "./imagenes/milanesaspollo.jpg"
+  },
+  {
+    "idProducto": "teque",
+    "nombreProducto": "Tequeños",
+    "precioProducto": 300,
+    "imagenProducto": "./imagenes/tequenos.jpg"
+  },
+  {
+    "idProducto": "croque",
+    "nombreProducto": "Croquetas de falafel",
+    "precioProducto": 800,
+    "imagenProducto": "./imagenes/croquetas.jpg"
+  },
+  {
+    "idProducto": "seitan",
+    "nombreProducto": "Seitan",
+    "precioProducto": 700,
+    "imagenProducto": "./imagenes/seitan.jpg"
+  }
+]

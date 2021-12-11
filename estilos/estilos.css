@@ -1,0 +1,388 @@
+* {
+  box-sizing: border-box;
+}
+
+.encabezado {
+  background-image: url('../imagenes/hojas.jpg');
+  background-size: fixed;
+  background-position: center;
+  width: 100%;
+  height: 230px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.encabezado .encabezado__logo {
+  width: 190px;
+  height: auto;
+  border-radius: 50%;
+}
+
+.navbar {
+  background-color: greenyellow;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  border-right: 1px solid black;
+  padding-right: 20px;
+  margin: 0px;
+  border-right: none;
+}
+
+.nav-link {
+  font-weight: bold;
+}
+
+.dropdown-menu {
+  background-color: greenyellow;
+  border: none;
+}
+
+/* ESTILOS PARA EL FORMULARIO DE REGISTRO */
+
+formBody {
+  background-color: #9b59b6;
+  font-family: 'Open Sans', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.formContainer {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  width: 400px;
+  max-width: 100%;
+}
+
+.formHeader {
+  background-color: greenyellow;
+  border: 2px solid black;
+  border-radius: inherit;
+  padding: 20px 40px;
+}
+
+.formHeader h2 {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  background-color: greenyellow;
+}
+
+.form {
+  padding: 30px 40px;
+}
+
+.form-control {
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.form-control label {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.form-control input {
+  border: 2px solid #f0f0f0;
+  border-radius: 4px;
+  display: block;
+  font-family: inherit;
+  font-size: 14px;
+  padding: 10px;
+  width: 100%;
+}
+
+.form-control input:focus {
+  outline: 0;
+  border-color: #777;
+}
+
+.form-control.success input {
+  border-color: #2ecc71;
+}
+
+.form-control.error input {
+  border-color: #e74c3c;
+}
+
+.form-control i {
+  visibility: hidden;
+  position: absolute;
+  top: 40px;
+  right: 10px;
+}
+
+.form-control.success i.fa-check-circle {
+  color: #2ecc71;
+  visibility: visible;
+}
+
+.form-control.error i.fa-exclamation-circle {
+  color: #e74c3c;
+  visibility: visible;
+}
+
+.form-control small {
+  color: #e74c3c;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  visibility: hidden;
+}
+
+.form-control.error small {
+  visibility: visible;
+  margin-bottom: -20px;
+}
+
+.form-control.error {
+  margin-bottom: 20px;
+}
+
+.form button {
+  border: 2px solid #8e44ad;
+  border-radius: 4px;
+  display: block;
+  font-family: inherit;
+  font-size: 16px;
+  padding: 10px;
+  margin-top: 20px;
+  width: 100%;
+  background-color: greenyellow;
+  color: black;
+  font-weight: bold;
+}
+
+div#successMessage {
+  font-weight: bold;
+  color: green;
+}
+
+/* MODAL DE REGISTRO */
+button.btn.btn-primary {
+  margin: 15px;
+  background-color: yellowgreen;
+  color: black;
+  font-weight: bold;
+}
+
+.modalRegistrationContainer {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.modal-body {
+  display: flex;
+  justify-content: center;
+}
+
+/* ESTILOS PARA EL FORMULARIO DE PAGO */
+form#formCard div.form-control {
+  margin-bottom: 50px;
+}
+
+form#formCard small {
+  margin-bottom: -45px;
+}
+
+/* ESTILOS PARA HTML QUIENES SOMOS*/
+
+.secciones__quienesSomos,
+.secciones__contacto,
+.secciones__productos {
+  margin: 0px 20px 20px 20px;
+}
+.secciones__quienesSomos--cajaVideo {
+  display: flex;
+  justify-content: center;
+  margin: 0px 20px 20px 20px;
+}
+.secciones__quienesSomos--cajaVideo--video {
+  margin-top: 20px;
+  background-color: yellowgreen;
+  padding: 15px;
+  border-radius: 10%;
+}
+.secciones__delivery--titulo,
+.secciones__quienesSomos--titulo,
+.secciones__contacto--titulo,
+.secciones__productos--titulo {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0px 20px 0px;
+  font-size: 30px;
+}
+.secciones__quienesSomos--alineacion,
+.secciones__contacto--alineacion,
+.secciones__delivery--alineacion,
+.secciones__productos--alineacion {
+  display: flex;
+  justify-content: center;
+}
+.secciones__quienesSomos--titulo {
+  font-size: 26px;
+}
+.secciones__quienesSomos--descripcion {
+  text-align: justify;
+}
+
+/* ESTILOS PARA HTML DELIVERY*/
+
+.secciones__delivery--grilla {
+  grid-template-columns: 1fr;
+  grid-gap: 65px;
+  justify-items: center;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.secciones__delivery--imagenes {
+  display: flex;
+  flex-direction: column;
+}
+.secciones__delivery--titulo,
+.secciones__quienesSomos--titulo,
+.secciones__contacto--titulo,
+.secciones__productos--titulo {
+  font-style: italic;
+  width: 220px;
+  background-image: linear-gradient(45deg, #1da51d, white, #1da51d 200px);
+  border-radius: 10px;
+  text-align: center;
+  margin-top: 50px;
+  font-size: 30px;
+}
+.grilla__imagenes .secciones__delivery--grilla {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.secciones__delivery {
+  margin: 0px 20px 20px 20px;
+}
+
+/* ESTILOS PARA HTML CONTACTO*/
+.secciones__contacto--publicidad {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 70px;
+  border: solid;
+  padding: 5px;
+  border-style: double;
+  border-radius: 10%;
+  font-weight: bold;
+  text-align: center;
+  width: 8rem;
+}
+.contacto__logoInstagram img {
+  width: 38px;
+}
+.secciones__contacto--logoFacebook {
+  margin-right: 3px;
+}
+.secciones__contacto--lista {
+  list-style: none;
+  padding: 0;
+  margin-left: 2em;
+}
+.secciones__contacto--lista li {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.secciones__contacto--lista a {
+  text-decoration: none;
+}
+
+.secciones__contacto--logoWhatsApp {
+  display: inline;
+}
+
+.secciones__contacto--logo1 img {
+  width: 38px;
+}
+
+.secciones__contacto--logoInstagram img {
+  width: 38px;
+}
+
+.secciones__contacto--logoFacebook {
+  display: inline;
+}
+
+.secciones__contacto--logoFacebook img {
+  width: 38px;
+}
+.secciones__contacto--logo1 {
+  width: 38px;
+  margin-right: 10px;
+}
+
+.secciones__contacto--logo2 {
+  width: 38px;
+  margin-right: 10px;
+}
+
+.secciones__contacto--logo3 {
+  width: 38px;
+  margin-right: 10px;
+}
+
+a.secciones__contacto--logoW {
+  background-color: #d6ffd6;
+}
+
+a.secciones__contacto--logoI {
+  background-color: #d6ffd6;
+}
+
+a.secciones__contacto--logoF {
+  background-color: #d6ffd6;
+}
+
+@media screen and (min-width: 576px) {
+  .secciones__quienesSomos--cajaVideo--video {
+    width: 400px;
+  }
+  .secciones__delivery--grilla {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5%;
+    min-height: 236px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  h3.secciones__delivery--zona {
+    font-size: 1em;
+    margin: 20px 0px;
+  }
+}
+@media (min-width: 576px) and (max-width: 992px) {
+  .secciones__quienesSomos--cajaVideo--video {
+    width: 400px;
+  }
+}
+@media screen and (min-width: 993px) {
+  .secciones__quienesSomos--alineacion,
+  .secciones__contacto--alineacion,
+  .secciones__delivery--alineacion,
+  .secciones__productos--alineacion {
+    justify-content: flex-start;
+  }
+  .secciones__quienesSomos--titulo-secundario {
+    text-align: left;
+  }
+  .secciones__quienesSomos--cajaVideo--video {
+    width: 400px;
+  }
+}
